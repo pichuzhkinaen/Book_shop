@@ -1,4 +1,17 @@
 .account {
     min-height: 28;
     background-color: #424242;
+    .login {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        &__item {
+            list-style-type: none;
+            margin-left: 30px;
+        }
+        &__link {
+            color: #FFFFFF;
+            font-size: 16px;
+        }
+    }
 }
