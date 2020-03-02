@@ -1,0 +1,82 @@
+.slider {
+    margin: 14px 0 14px 0;
+    &__carousel {
+        display: flex;
+        justify-content: space-between;
+        width: 825px;
+        height: 304px;
+        background: url('../../src/img/slider.jpg') (center / cover) no-repeat;
+        color: #FFFFFF;
+        padding: 130px 12px 76px 12px;
+        h2 {
+            font-size: 47px;
+            line-height: 47px;
+            margin: 0 0 0 303px;
+        }
+        p {
+            font-size: 23px;
+            line-height: 23px;
+            margin: 0 0 0 366px;
+        }
+        h3 {
+            font-size: 21px;
+            line-height: 21px;
+            margin: 9px 0 0 400px;
+        }
+    }
+    &__arrows {
+        width: 39px;
+        height: 39px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 100%;
+        border: none;
+        outline: none !important;
+        padding: 0 14px 0 14px;
+        &_back {
+            transform: translateX(-3px);; 
+        }
+    }
+    &__banner {
+        width: 269px;
+        height: 305px;
+        background: radial-gradient(circle at 30% center, #9F9F9F, #4A4A4A);
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 18px;
+        padding-bottom: 7px;
+        h2 {
+            font-size: 29px;
+            line-height: 29px;
+        }
+        h3 {
+            font-size: 15px;
+            line-height: 15px;
+            margin-top: 8px;
+        }
+        p {
+            font-size: 21px;
+            line-height: 21px;
+            margin: 25px 0 4px 0;
+        }
+        h4 {
+            font-size: 29px;
+            line-height: 29px;
+            margin: 4px 0 0 0;
+        }
+    }
+    &__btn {
+        width: 108px;
+        height: 28px;
+        margin-top: 4px;
+        background: linear-gradient(to top, #51A551,  #60C160);
+        color: #FFFFFF;
+        border: none;
+        outline: none !important;
+        border-radius: 4px;
+        
+        span {
+            text-shadow: 1px 2px 1px #3C8F3C;
+        }
+    }
+    
+}

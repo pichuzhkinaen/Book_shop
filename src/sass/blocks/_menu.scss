@@ -1,7 +1,7 @@
 .menu {
     height: 41px;
     box-shadow: 0 0 3px rgba(0,0,0,0.2);
-    .nav {
+    &-nav {
         display: flex;
         justify-content: center;
         line-height: 19px;
@@ -9,7 +9,7 @@
             background: linear-gradient(to top, #7AB361, #92D673);
             color: #FFFFFF;
         }
-        &__item {
+        li {
             list-style-type: none;
             
         }

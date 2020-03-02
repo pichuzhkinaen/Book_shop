@@ -14,11 +14,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5 offset-md-7">
-                    <ul class="login">
-                        <li class="login__item"><a href="#" class="login__link">Sign in</a></li>
-                        <li class="login__item"><a href="#" class="login__link">My Account</a></li>
-                        <li class="login__item"><a href="#" class="login__link">Order Status</a></li>
-                        <li class="login__item"><a href="#" class="login__link">Help</a></li>
+                    <ul class="account__login">
+                        <li class="account__item"><a href="#">Sign in</a></li>
+                        <li class="account__item"><a href="#">My Account</a></li>
+                        <li class="account__item"><a href="#">Order Status</a></li>
+                        <li class="account__item"><a href="#">Help</a></li>
                     </ul>
                 </div>
             </div>
@@ -44,17 +44,17 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="header-basket">
+                            <div class="header__basket">
                                 <div>
                                     <img src="icons/basket.png" alt="basket">
                                     Your cart <span>(2 items)</span>
-                                    <h2 class="header-basket__sum">$125.0<button class="header-basket__btn">Checkout</button></h2>
+                                    <h2 class="header__sum">$125.0<button class="header__btn">Checkout</button></h2>
                                     </img>
                                 </div>
-                                <div class="header-basket__line"></div>
-                                <div class="header-basket__wish-list">
+                                <div class="header__line"></div>
+                                <div class="header__wish-list">
                                     <img src="icons/star.png" alt="Wish">
-                                    <div class="header-basket__counter"><a href="#">20</a></div>
+                                    <div class="header__counter"><a href="#">20</a></div>
                                     <p>Wish list</p>
                                 </div>
                             </div>
@@ -69,16 +69,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <ul class="nav">
-                        <li class="nav__item"><button href="#" class="nav__link">Computers</button></li>
-                        <li class="nav__item"><button href="#" class="nav__link">Cooking</button></li>
-                        <li class="nav__item"><button href="#" class="nav__link">Education</button></li>
-                        <li class="nav__item"><button href="#" class="nav__link">Fiction</button></li>
-                        <li class="nav__item"><button href="#" class="nav__link">Health</button></li>
-                        <li class="nav__item"><button href="#" class="nav__link">Mathematics</button></li>
-                        <li class="nav__item"><button href="#" class="nav__link">Medical</button></li>
-                        <li class="nav__item"><button href="#" class="nav__link">Reference</button></li>
-                        <li class="nav__item"><button href="#" class="nav__link">Science</button></li>
+                    <ul class="menu-nav">
+                        <li><button href="#" class="menu-nav__link">Computers</button></li>
+                        <li><button href="#" class="menu-nav__link">Cooking</button></li>
+                        <li><button href="#" class="menu-nav__link">Education</button></li>
+                        <li><button href="#" class="menu-nav__link">Fiction</button></li>
+                        <li><button href="#" class="menu-nav__link">Health</button></li>
+                        <li><button href="#" class="menu-nav__link">Mathematics</button></li>
+                        <li><button href="#" class="menu-nav__link">Medical</button></li>
+                        <li><button href="#" class="menu-nav__link">Reference</button></li>
+                        <li><button href="#" class="menu-nav__link">Science</button></li>
                     </ul>
                 </div>
             </div>
@@ -88,9 +88,25 @@
     <section class="slider">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
-                    <div class="carousel">
-
+                <div class="col-md-9">
+                    <div class="slider__carousel">
+                        <button class="slider__arrows"><img class="slider__arrows_back" src="icons/arrow-back.png" alt="forward"></button>
+                        <div>
+                            <h2>A Wanted Man</h2>
+                            <p>(Jack Reacher #17)</p>
+                            <h3>By Lee Child </h3>
+                        </div>
+                        <button class="slider__arrows"><img src="icons/arrow-forward.png" alt="back"></button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="slider__banner">
+                        <h2>Deal of the Month</h2>
+                        <h3>The Human Face of Big Data</h3>
+                        <img src="img/banner.jpg" alt="banner">
+                        <p>Save 45% Today</p>
+                        <h4>$27.50</h4>
+                        <button class="slider__btn"><span>Buy now</span></button>
                     </div>
                 </div>
             </div>
