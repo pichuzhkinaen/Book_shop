@@ -1,0 +1,25 @@
+.footer {
+    height: 165px;
+    background-color: #2E2F2F;
+    &__text {
+        font-size: 20px;
+        color: #DDDDDD;
+        text-align: center;
+        padding-top: 20px;
+    }
+    &__img {
+        text-align: center;
+        margin-top: 9px;
+    }
+    &__line {
+        height: 2px;
+        background-color: #42423F;
+        margin-top: 13px;
+    }
+    p {
+        font-size: 16px;
+        color: #DDDDDD;
+        text-align: center;
+        margin-top: 17px;
+    }
+}
