@@ -1,5 +1,5 @@
 * {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .account {
@@ -185,6 +185,7 @@
   border: none;
   outline: none;
   padding: 0;
+  outline: none !important;
 }
 
 .slider {
@@ -309,6 +310,7 @@
   background: linear-gradient(to top, #7AB361, #92D673);
   -webkit-transform: translateX(-24px);
           transform: translateX(-24px);
+  padding-top: 3px;
 }
 
 .shop__all a {
@@ -319,7 +321,7 @@
 }
 
 .shop__categories {
-  padding: 0;
+  padding: 0 0 55px 0;
 }
 
 .shop__categories h3 {
@@ -344,7 +346,7 @@
   text-decoration: none;
 }
 
-.shop__buy-menu {
+.shop-buy__menu {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -352,12 +354,117 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin-bottom: 1px;
 }
 
-.shop__buy-menu__btn {
+.shop-buy__btn {
   width: 140px;
   height: 39px;
+  font-size: 17px;
+  color: #6B6969;
   border: none;
   outline: none;
+  background: -webkit-gradient(linear, left bottom, left top, from(#E8E8E8), to(#F9F9F9));
+  background: linear-gradient(to top, #E8E8E8, #F9F9F9);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  outline: none !important;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.shop-buy__btn_active {
+  font-size: 18px;
+  color: #464646;
+  background: #fff;
+}
+
+.shop-buy__goods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 890px;
+  min-height: 864;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  margin-left: 40px;
+  padding: 25px 0 0 26px;
+}
+
+.shop-buy__goods a {
+  text-decoration: none;
+}
+
+.shop-buy__product {
+  width: 108px;
+  height: 160px;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  margin: 5px 63px 90px 0;
+  text-align: center;
+}
+
+.shop-buy__product_active {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.shop-buy__img {
+  margin-top: 5px;
+}
+
+.shop-buy__title {
+  font-size: 14px;
+  color: #646464;
+  line-height: 15px;
+  margin: 20px 0 0 0;
+}
+
+.shop-buy__price {
+  font-size: 22px;
+  color: #F05356;
+}
+
+.shop-buy__pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.shop-buy__pages li {
+  list-style-type: none;
+}
+
+.shop-buy__page {
+  width: 24px;
+  height: 28px;
+  color: #646464;
+  border: none;
+  outline: none !important;
+  background-color: #fff;
+}
+
+.shop-buy__page_active {
+  border: 1px solid;
+  border-color: #EFEFEF;
+  border-bottom: 4px solid #81BD66;
+}
+
+.footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */

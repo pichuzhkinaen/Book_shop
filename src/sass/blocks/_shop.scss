@@ -16,6 +16,7 @@
         height: 29px;
         background: linear-gradient(to top, #7AB361, #92D673);
         transform: translateX(-24px);
+        padding-top: 3px;
         a {
             color: #FFFFFF;
             text-transform: uppercase;
@@ -24,7 +25,7 @@
         }
     }
     &__categories {
-        padding: 0;
+        padding: 0 0 55px 0;
         h3 {
             font-size: 17px;
             margin-top: 12px;
@@ -44,19 +45,86 @@
             text-decoration: none;
         }
     }
-    &__buy {
-        &-menu {
+    &-buy {
+        &__menu {
             list-style-type: none;
             display: flex;
             justify-content: flex-start;
-            &__btn {
-                width: 140px;
-                height: 39px;
-                border: none;
-                outline: none;
+            margin-bottom: 1px;
+        }
+        &__btn {
+            width: 140px;
+            height: 39px;
+            font-size: 17px;
+            color: #6B6969;
+            border: none;
+            outline: none;
+            background: linear-gradient(to top, #E8E8E8, #F9F9F9);
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+            outline: none !important;
+            transition: 0.5s all;
+            &_active {
+                font-size: 18px;
+                color: #464646;
+                background: #fff;
+            }
+        }
+        &__goods {
+            display: flex;
+            justify-content: left;
+            flex-wrap: wrap;
+            width: 890px;
+            min-height: 864;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+            margin-left: 40px;
+            padding: 25px 0 0 26px;
+            a {
+                text-decoration: none;
+            }
+        }
+        &__product {
+            width: 108px;
+            height: 160px;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+            margin: 5px 63px 90px 0;
+            text-align: center;
+            &_active {
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); 
+            }
+        }
+        &__img {
+            margin-top: 5px;
+        }
+        &__title {
+            font-size: 14px;
+            color: #646464;
+            line-height: 15px;
+            margin: 20px 0 0 0;
+        }
+        &__price {
+            font-size: 22px;
+            color: #F05356;
+        }
+        &__pages {
+            display: flex;
+            justify-content: flex-end;
+            li {
+                list-style-type: none;
+            }
+        }
+        &__page {
+            width: 24px;
+            height: 28px;
+            color: #646464;
+            border: none;
+            outline: none !important;
+            background-color: #fff;
+            &_active {
+                border: 1px solid;
+                border-color: #EFEFEF;
+                border-bottom: 4px solid #81BD66;
             }
         }
     }
-
-
 }

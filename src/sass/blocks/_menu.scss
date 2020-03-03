@@ -10,8 +10,7 @@
             color: #FFFFFF;
         }
         li {
-            list-style-type: none;
-            
+            list-style-type: none;            
         }
         &__link {
             width: 130px;
@@ -22,6 +21,7 @@
             border: none;
             outline: none;
             padding: 0;
+            outline: none !important;
         }
     }
 }
