@@ -4,24 +4,25 @@
         display: flex;
         justify-content: space-between;
         width: 825px;
-        height: 304px;
+        height: 305px;
         background: url('../../src/img/slider.jpg') (center / cover) no-repeat;
         color: #FFFFFF;
         padding: 130px 12px 76px 12px;
+    }
+    &__content {
+        margin-left: 303px;
+        text-align: center;
         h2 {
             font-size: 47px;
             line-height: 47px;
-            margin: 0 0 0 303px;
         }
         p {
             font-size: 23px;
             line-height: 23px;
-            margin: 0 0 0 366px;
         }
         h3 {
             font-size: 21px;
             line-height: 21px;
-            margin: 9px 0 0 400px;
         }
     }
     &__arrows {

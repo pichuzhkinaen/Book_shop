@@ -1,0 +1,349 @@
+@media (max-width: 1200px) {
+    .header {
+        &__search {
+            width: 433px;
+        }
+        &__input {
+            width: 300px;
+        }
+        &__basket {
+            span {
+                padding-left: 5px;
+            }
+        }
+    }
+    .menu {
+        &-nav {
+            &__link {
+                width: 110px;
+                font-size: 18px;
+            }
+        }
+    }
+    .slider {
+        &__carousel {
+            width: 700px;
+        }
+        &__content {
+            margin-left: 270px;
+            h2 {
+                font-size: 40px;
+                line-height: 40px;
+            }
+        }
+    }
+    .buy {
+        min-height: 1080px;
+        &__nav {
+            height: 1080px;
+        }
+        .shop {
+            &-buy {
+                &__goods {
+                    width: 755px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .header-menu {
+        a {
+            font-size: 16px;
+        }
+    }
+    .header {
+        &__basket {
+            margin-top: 20px;
+            min-width: 400px;
+        }
+        &__counter {
+            width: 36px;
+            height: 24px;
+            font-size: 16px;
+            margin-top: -13px;
+        }
+        &__btn {
+            font-size: 20px;
+        }
+    }
+    .menu {
+        height: 82px;
+        &-nav {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    .slider {
+        &__carousel {
+            width: 535px;
+            background: url('../../src/img/slider.jpg') (left / cover) no-repeat;
+        }
+        &__content {
+            margin-left: 180px;
+            text-shadow: 2px 1px 2px rgba(0, 0, 0, 1);
+            h2 {
+                font-size: 30px;
+                line-height: 30px;
+            }
+            p {
+                font-size: 20px;
+                line-height: 20px;
+            }
+            h3 {
+                font-size: 18px;
+                line-height: 18px;
+            }
+        }
+    }
+    .buy {
+        .shop {
+            &__nav {
+                h2 {
+                    font-size: 26px;
+                }
+            }
+            &__btn {
+                height: 39px;
+            }
+            &__h3 {
+                top: -50%;
+            }
+            &__h4 {
+                font-weight: 700;
+                padding: 0;
+            }
+            &__item {
+                line-height: 40px;
+            }
+            &-buy {
+                min-height: 1400px;
+                &__btn {
+                    font-size: 18px;
+                }
+                &__goods {
+                    width: 580px;
+                    padding: 25px 0 60px 45px;
+                }
+                &__pages {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .header {
+        &__search {
+            width: 353px;
+            font-size: 20px;
+        }
+        &__input {
+            width: 230px;
+        }
+    }
+    .menu {
+        &-nav {
+            &__link {
+                font-size: 14px;
+                width: 90px;
+            }
+        }
+    }
+    .slider {
+        margin-top: 10px;
+        &__carousel {
+            width: 310px;
+            height: 180px;
+            padding: 0 5px 0 5px;
+        }
+        &__content {
+            margin-left: 110px;
+            margin-top: 70px;
+            h2 {
+                font-size: 16px;
+                line-height: 16px;
+            }
+            p {
+                font-size: 11px;
+                line-height: 11px;
+            }
+            h3 {
+                font-size: 10px;
+                line-height: 10px;
+            }
+        }
+        &__arrows {
+            width: 25px;
+            height: 25px;
+            padding: 0 10px 0 10px;
+            margin: 80px auto;
+            &_back {
+                width: 8px;
+                margin-top: -3px;
+            }
+            &_forward {
+                width: 8px;
+                margin-top: -3px;
+            }
+        }
+        &__banner {
+            width: 180px;
+            height: 180px;
+            h2 {
+                font-size: 20px;
+                line-height: 20px;
+            }
+            h3 {
+                font-size: 10px;
+                line-height: 10px;
+                margin-top: 8px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 16px;
+                margin: 25px 0 4px 0;
+            }
+            h4 {
+                font-size: 20px;
+                line-height: 20px;
+                margin: 4px 0 0 0;
+            }
+            img {
+                width: 64px;
+            }
+        }
+    }
+    .buy {
+        .shop {
+            display: block;
+            &__nav {
+                z-index: 3;
+                min-height: 64px;
+                width: 300px;
+                h2 {
+                    margin-left: 0;
+                }
+            }
+            &__categories {
+                position: fixed;
+                display: flex;
+                flex-wrap: wrap;
+                top: 0;
+                left: 0;
+                width: 50%;
+                height: 100%;
+                padding: 20px 15px;
+                background-color: rgba(0,0,0, .8);
+                transition: 0.6s all;
+                left: -100%;
+                z-index: 5;
+                // &_active {
+                //     span {
+                //         margin-top: 20px;
+                //         &:nth-child(1) {
+                //             transform: translateY(3px) rotate(-45deg);
+                //         }
+                //         &:nth-child(2) {
+                //             display: none;
+                //         }
+                //         &:nth-child(3) {
+                //             transform: translateY(3px) rotate(45deg);
+                //         }
+                //     }
+                // }
+                :hover {
+                    text-decoration: underline;
+                    text-decoration-color: #ffffff;
+                }
+                :focus {
+                    background: transparent;
+                }
+                &_active {
+                    left: 0;
+                }
+            }
+            &__btn {
+                width: 130px;
+                height: 30px;
+                background-color: transparent;
+                span {
+                    color: #ffffff;
+                }
+            }
+            &__h3 {
+                width: 200px;
+            }
+            &__h4 {
+                width: 200px;
+            }
+            &__item {
+                border-bottom: none;
+            }
+            &__hamburger {
+                display: block;
+                position: absolute;
+                padding: 0 0 26px 0;
+                transform: translateY(-50%);
+                width: 20px;
+                height: 12px;
+                span {
+                    display: block;
+                    height: 2px;
+                    width: 100%;
+                    background-color: #6C6A6A;
+                    margin-bottom: 2px;
+                    transition: 0.5s all;
+                }
+                // &_active {
+                //     span {
+                //         margin-bottom: -2px;
+                //         &:nth-child(1) {
+                //             transform: translateY(3px) rotate(-45deg);
+                //         }
+                //         &:nth-child(2) {
+                //             display: none;
+                //         }
+                //         &:nth-child(3) {
+                //             transform: translateY(3px) rotate(45deg);
+                //         }
+                //     }
+                // }
+            }
+            &-buy {
+                min-height: 1390px;
+                margin-left: 0;
+                &__menu {
+                    :focus {
+                        font-size: 16px;
+                    }   
+                }
+                &__btn {
+                    width: 110px;
+                    font-size: 16px;
+                }
+                &__goods {
+                    width: 510px;
+                    padding: 25px 0 60px 45px;
+                }
+                &__product {
+                    margin-right: 45px;
+                }
+                &__pages {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    .library {
+        .library-menu {
+            display: flex;
+            flex-wrap: wrap;
+            &__block {
+                width: 200px;
+                margin-right: 0;
+            }
+        }
+    }
+}

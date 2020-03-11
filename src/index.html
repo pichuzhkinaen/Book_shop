@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
@@ -10,96 +10,86 @@
     <title>Books Online</title>
 </head>
 <body>
-    <section class="account">
+    <section class="header-menu">
         <div class="container">
-            <div class="row">
-                <div class="col-md-5 offset-md-7">
-                    <ul class="account__login">
-                        <li class="account__item"><a href="#">Sign in</a></li>
-                        <li class="account__item"><a href="#">My Account</a></li>
-                        <li class="account__item"><a href="#">Order Status</a></li>
-                        <li class="account__item"><a href="#">Help</a></li>
-                    </ul>
-                </div>
-            </div>
+            <ul class="header-menu__list">
+                <li class="header-menu__item"><a href="#">Sign in</a></li>
+                <li class="header-menu__item"><a href="#">My Account</a></li>
+                <li class="header-menu__item"><a href="#">Order Status</a></li>
+                <li class="header-menu__item"><a href="#">Help</a></li>
+            </ul>
         </div>
     </section>
 
-    <section class="header">
+    <header class="header">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="header__main">
-                        <div class="col-md-2">
-                            <a href="#" class="header__logo">
-                                <img src="icons/logo.png" alt="logo">
-                            </a>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="header-introduce">
-                                <input class="header-introduce__input" type="text">
-                                <button class="header-introduce__btn">
-                                    <img src="icons/search.png" alt="поиск">
-                                    Search</button>
+                <div class="col-md-2 col-sm-3">
+                    <a href="#" class="header__logo">
+                        <img src="icons/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-md-6 col-sm-9">
+                    <div class="header__search">
+                        <input class="header__input" type="text">
+                        <button class="header__button">
+                            <img src="icons/search.png" alt="поиск">
+                            Search</button>
+                    </div>
+                </div>
+                <div class="header__buy">
+                    <div class="col-md-4">
+                        <div class="header__basket">
+                            <div>
+                                <img src="icons/basket.png" alt="basket">
+                                Your cart <span>(2 items)</span>
+                                <h2 class="header__sum">$125.0<button class="header__btn">Checkout</button></h2>
+                                </img>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="header__basket">
-                                <div>
-                                    <img src="icons/basket.png" alt="basket">
-                                    Your cart <span>(2 items)</span>
-                                    <h2 class="header__sum">$125.0<button class="header__btn">Checkout</button></h2>
-                                    </img>
-                                </div>
-                                <div class="header__line"></div>
-                                <div class="header__wish-list">
-                                    <img src="icons/star.png" alt="Wish">
-                                    <div class="header__counter"><a href="#">20</a></div>
-                                    <p>Wish list</p>
-                                </div>
+                            <div class="header__line"></div>
+                            <div class="header__wish-list">
+                                <img src="icons/star.png" alt="Wish">
+                                <div class="header__counter"><a href="#">20</a></div>
+                                <p>Wish list</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </header>
 
     <section class="menu">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <ul class="menu-nav">
-                        <li><button href="#" class="menu-nav__link">Computers</button></li>
-                        <li><button href="#" class="menu-nav__link">Cooking</button></li>
-                        <li><button href="#" class="menu-nav__link">Education</button></li>
-                        <li><button href="#" class="menu-nav__link">Fiction</button></li>
-                        <li><button href="#" class="menu-nav__link">Health</button></li>
-                        <li><button href="#" class="menu-nav__link">Mathematics</button></li>
-                        <li><button href="#" class="menu-nav__link">Medical</button></li>
-                        <li><button href="#" class="menu-nav__link">Reference</button></li>
-                        <li><button href="#" class="menu-nav__link">Science</button></li>
-                    </ul>
-                </div>
-            </div>
+            <ul class="menu-nav">
+                <li><button href="#" class="menu-nav__link">Computers</button></li>
+                <li><button href="#" class="menu-nav__link">Cooking</button></li>
+                <li><button href="#" class="menu-nav__link">Education</button></li>
+                <li><button href="#" class="menu-nav__link">Fiction</button></li>
+                <li><button href="#" class="menu-nav__link">Health</button></li>
+                <li><button href="#" class="menu-nav__link">Mathematics</button></li>
+                <li><button href="#" class="menu-nav__link">Medical</button></li>
+                <li><button href="#" class="menu-nav__link">Reference</button></li>
+                <li><button href="#" class="menu-nav__link">Science</button></li>
+            </ul>
         </div>
     </section>
 
     <section class="slider">
         <div class="container">
             <div class="row">
-                <div class="col-md-9">
+                <div class="col-md-9 col-sm-7">
                     <div class="slider__carousel">
                         <button class="slider__arrows"><img class="slider__arrows_back" src="icons/arrow-back.png" alt="forward"></button>
-                        <div>
+                        <div class="slider__content">
                             <h2>A Wanted Man</h2>
                             <p>(Jack Reacher #17)</p>
                             <h3>By Lee Child </h3>
                         </div>
-                        <button class="slider__arrows"><img src="icons/arrow-forward.png" alt="back"></button>
+                        <button class="slider__arrows"><img class="slider__arrows_forward" src="icons/arrow-forward.png" alt="back"></button>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-5">
                     <div class="slider__banner">
                         <h2>Deal of the Month</h2>
                         <h3>The Human Face of Big Data</h3>
@@ -113,167 +103,171 @@
         </div>
     </section>
     
-    <section class="shop">
+    <section class="buy">
         <div class="container">
             <div class="row">
-                <div class="col-md-2">
-                    <div class="shop__nav">
-                        <h2>Categories</h2>
-                        <div class="shop__all"><a href="#">all</a></div>
-                        <ul class="shop__categories">
-                            <h3>Fiction & Literature</h3>
-                            <li ><a href="#">Children</a></li>
-                            <li ><a href="#">Science Fiction</a></li>
-                            <li ><a href="#">Fantasy</a></li>
-                            <li ><a href="#">Mystery</a></li>
-                            <li ><a href="#">Romance</a></li>
-                            <li ><a href="#">Horror</a></li>
-                            <li ><a href="#">Poetry</a></li>
-                            <li ><a href="#">Literature</a></li>
-                            <li ><a href="#">Crime</a></li>
-                            <h3>Non - Fiction</h3>
-                            <li ><a href="#">Comic</a></li>
-                            <li ><a href="#">Cook</a></li>
-                            <li ><a href="#">Psychology</a></li>
-                            <li ><a href="#">Medical</a></li>
-                            <li ><a href="#">Art</a></li>
-                            <li ><a href="#">Photography</a></li>
-                            <li ><a href="#">Law</a></li>
-                            <li ><a href="#">History</a></li>
-                            <li ><a href="#">Business</a></li>
-                            <li ><a href="#">Computer</a></li>
-                            <h3>Non - Fiction</h3>
-                            <li ><a href="#">Baby</a></li>
-                            <li ><a href="#">Sex</a></li>
-                            <li ><a href="#">Travel</a></li>
-                            <li ><a href="#">Science</a></li>
-                            <li ><a href="#">Sports</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-10">
-                    <div class="shop-buy">
-                        <ul class="shop-buy__menu">
-                            <li><button href="#" class="shop-buy__btn shop-buy__btn_active">Best sellers</button></li>
-                            <li><button href="#" class="shop-buy__btn shop-buy__btn_active">New Arrivals</button></li>
-                            <li><button href="#" class="shop-buy__btn shop-buy__btn_active">Used Books</button></li>
-                            <li><button href="#" class="shop-buy__btn shop-buy__btn_active">Special Offers</button></li>
-                        </ul>
-                        <div class="shop-buy__goods">
-                            <a href="#">
-                                <div class="shop-buy__product shop-buy__product_active">
-                                    <img src="img/book1.jpg" alt="book" class="shop-buy__img">
-                                    <p class="shop-buy__title">The Hare With<br>Amber Eyes</p>
-                                    <p class="shop-buy__price">$200</p>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="shop-buy__product shop-buy__product_active">
-                                    <img src="img/book2.jpg" alt="book" class="shop-buy__img">
-                                    <p class="shop-buy__title">Life Is What You<br>Make It</p>
-                                    <p class="shop-buy__price">$70</p>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="shop-buy__product shop-buy__product_active">
-                                    <img src="img/book3.jpg" alt="book" class="shop-buy__img">
-                                    <p class="shop-buy__title">The war of<br>Art</p>
-                                    <p class="shop-buy__price">$120</p>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="shop-buy__product shop-buy__product_active">
-                                    <img src="img/book4.jpg" alt="book" class="shop-buy__img">
-                                    <p class="shop-buy__title">The Immortals<br>of Meluha</p>
-                                    <p class="shop-buy__price">$60</p>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="shop-buy__product shop-buy__product_active">
-                                    <img src="img/book5.jpg" alt="book" class="shop-buy__img">
-                                    <p class="shop-buy__title">Life Is What You<br>Make It</p>
-                                    <p class="shop-buy__price">$50</p>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="shop-buy__product shop-buy__product_active">
-                                    <img src="img/book6.jpg" alt="book" class="shop-buy__img">
-                                    <p class="shop-buy__title">The war of<br>Art</p>
-                                    <p class="shop-buy__price">$150</p>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="shop-buy__product shop-buy__product_active">
-                                    <img src="img/book7.jpg" alt="book" class="shop-buy__img">
-                                    <p class="shop-buy__title">The Hare With<br>Amber Eyes</p>
-                                    <p class="shop-buy__price">$120</p>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="shop-buy__product shop-buy__product_active">
-                                    <img src="img/book8.jpg" alt="book" class="shop-buy__img">
-                                    <p class="shop-buy__title">The Immortals<br>of Meluha</p>
-                                    <p class="shop-buy__price">$50</p>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="shop-buy__product shop-buy__product_active">
-                                    <img src="img/book9.jpg" alt="book" class="shop-buy__img">
-                                    <p class="shop-buy__title">Life Is What You<br>Make It</p>
-                                    <p class="shop-buy__price">$70</p>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="shop-buy__product shop-buy__product_active">
-                                    <img src="img/book10.jpg" alt="book" class="shop-buy__img">
-                                    <p class="shop-buy__title">The Hare With<br>Amber Eyes</p>
-                                    <p class="shop-buy__price">$40</p>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="shop-buy__product shop-buy__product_active">
-                                    <img src="img/book11.jpg" alt="book" class="shop-buy__img">
-                                    <p class="shop-buy__title">The Immortals<br>of Meluha</p>
-                                    <p class="shop-buy__price">$122</p>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="shop-buy__product shop-buy__product_active">
-                                    <img src="img/book12.jpg" alt="book" class="shop-buy__img">
-                                    <p class="shop-buy__title">Life Is What You<br>Make It</p>
-                                    <p class="shop-buy__price">$200</p>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="shop-buy__product shop-buy__product_active">
-                                    <img src="img/book13.jpg" alt="book" class="shop-buy__img">
-                                    <p class="shop-buy__title">Life Is What You<br>Make It</p>
-                                    <p class="shop-buy__price">$50</p>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="shop-buy__product shop-buy__product_active">
-                                    <img src="img/book14.jpg" alt="book" class="shop-buy__img">
-                                    <p class="shop-buy__title">The Hare With<br>Amber Eyes</p>
-                                    <p class="shop-buy__price">$55</p>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="shop-buy__product shop-buy__product_active">
-                                    <img src="img/book15.jpg" alt="book" class="shop-buy__img">
-                                    <p class="shop-buy__title">The Immortals<br>of Meluha</p>
-                                    <p class="shop-buy__price">$120</p>
-                                </div>
-                            </a>
-                            <ul class="shop-buy__pages">
-                                <li><button href="#" class="shop-buy__page shop-buy__page_active">1</button></li>
-                                <li><button href="#" class="shop-buy__page shop-buy__page_active">2</button></li>
-                                <li><button href="#" class="shop-buy__page shop-buy__page_active">3</button></li>
-                                <li><button href="#" class="shop-buy__page shop-buy__page_active">4</button></li>
-                                <li><button href="#" class="shop-buy__page shop-buy__page_active">5</button></li>
-                                <li><button href="#" class="shop-buy__page shop-buy__page_active">6</button></li>
+                <div class="col-md-12">
+                    <div class="shop">
+                        <div class="shop__nav">
+                            <h2>Categories</h2>
+                            <ul class="shop__categories">
+                                <h3><button class="shop__btn shop__h3" href="#"><span>all</span></button></h3>
+                                <h4><button class="shop__btn shop__h4" href="#"><span>Fiction & Literature</span></button></h4>
+                                <li class="shop__item"><button class="shop__btn" href="#"><span>Children</span></button></li>
+                                <li class="shop__item"><button class="shop__btn" href="#"><span>Science Fiction</span></button></li>
+                                <li class="shop__item"><button class="shop__btn" href="#"><span>Fantasy</span></button></li>
+                                <li class="shop__item"><button class="shop__btn" href="#"><span>Mystery</span></button></li>
+                                <li class="shop__item"><button class="shop__btn" href="#"><span>Romance</span></button></li>
+                                <li class="shop__item"><button class="shop__btn" href="#"><span>Horror</span></button></li>
+                                <li class="shop__item"><button class="shop__btn" href="#"><span>Poetry</span></button></li>
+                                <li class="shop__item"><button class="shop__btn" href="#"><span>Literature</span></button></li>
+                                <li class="shop__item"><button class="shop__btn" href="#"><span>Crime</span></button></li>
+                                <h4><button class="shop__btn shop__h4" href="#"><span>Non - Fiction</span></button></h4>
+                                <li class="shop__item"><button class="shop__btn" href="#"><span>Comic</span></button></li>
+                                <li class="shop__item"><button class="shop__btn" href="#"><span>Cook</span></button></li>
+                                <li class="shop__item"><button class="shop__btn" href="#"><span>Psychology</span></button></li>
+                                <li class="shop__item"><button class="shop__btn" href="#"><span>Medical</span></button></li>
+                                <li class="shop__item"><button class="shop__btn" href="#"><span>Art</span></button></li>
+                                <li class="shop__item"><button class="shop__btn" href="#"><span>Photography</span></button></li>
+                                <li class="shop__item"><button class="shop__btn" href="#"><span>Law</span></button></li>
+                                <li class="shop__item"><button class="shop__btn" href="#"><span>History</span></button></li>
+                                <li class="shop__item"><button class="shop__btn" href="#"><span>Business</span></button></li>
+                                <li class="shop__item"><button class="shop__btn" href="#"><span>Computer</span></button></li>
+                                <h4><button class="shop__btn shop__h4" href="#"><span>Other</span></button></h4>
+                                <li class="shop__item"><button class="shop__btn" href="#"><span>Baby</span></button></li>
+                                <li class="shop__item"><button class="shop__btn" href="#"><span>Sex</span></button></li>
+                                <li class="shop__item"><button class="shop__btn" href="#"><span>Travel</span></button></li>
+                                <li class="shop__item"><button class="shop__btn" href="#"><span>Science</span></button></li>
+                                <li class="shop__item"><button class="shop__btn" href="#"><span>Sports</span></button></li>
                             </ul>
+                            <div class="shop__hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="shop-buy">
+                            <ul class="shop-buy__menu">
+                                <li><button href="#" class="shop-buy__btn shop-buy__btn_active">Best sellers</button></li>
+                                <li><button href="#" class="shop-buy__btn shop-buy__btn_active">New Arrivals</button></li>
+                                <li><button href="#" class="shop-buy__btn shop-buy__btn_active">Used Books</button></li>
+                                <li><button href="#" class="shop-buy__btn shop-buy__btn_active">Special Offers</button></li>
+                            </ul>
+                            <div class="shop-buy__goods">
+                                <a href="#">
+                                    <div class="shop-buy__product shop-buy__product_active">
+                                        <img src="img/book1.jpg" alt="book" class="shop-buy__img">
+                                        <p class="shop-buy__title">The Hare With<br>Amber Eyes</p>
+                                        <p class="shop-buy__price">$200</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="shop-buy__product shop-buy__product_active">
+                                        <img src="img/book2.jpg" alt="book" class="shop-buy__img">
+                                        <p class="shop-buy__title">Life Is What You<br>Make It</p>
+                                        <p class="shop-buy__price">$70</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="shop-buy__product shop-buy__product_active">
+                                        <img src="img/book3.jpg" alt="book" class="shop-buy__img">
+                                        <p class="shop-buy__title">The war of<br>Art</p>
+                                        <p class="shop-buy__price">$120</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="shop-buy__product shop-buy__product_active">
+                                        <img src="img/book4.jpg" alt="book" class="shop-buy__img">
+                                        <p class="shop-buy__title">The Immortals<br>of Meluha</p>
+                                        <p class="shop-buy__price">$60</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="shop-buy__product shop-buy__product_active">
+                                        <img src="img/book5.jpg" alt="book" class="shop-buy__img">
+                                        <p class="shop-buy__title">Life Is What You<br>Make It</p>
+                                        <p class="shop-buy__price">$50</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="shop-buy__product shop-buy__product_active">
+                                        <img src="img/book6.jpg" alt="book" class="shop-buy__img">
+                                        <p class="shop-buy__title">The war of<br>Art</p>
+                                        <p class="shop-buy__price">$150</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="shop-buy__product shop-buy__product_active">
+                                        <img src="img/book7.jpg" alt="book" class="shop-buy__img">
+                                        <p class="shop-buy__title">The Hare With<br>Amber Eyes</p>
+                                        <p class="shop-buy__price">$120</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="shop-buy__product shop-buy__product_active">
+                                        <img src="img/book8.jpg" alt="book" class="shop-buy__img">
+                                        <p class="shop-buy__title">The Immortals<br>of Meluha</p>
+                                        <p class="shop-buy__price">$50</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="shop-buy__product shop-buy__product_active">
+                                        <img src="img/book9.jpg" alt="book" class="shop-buy__img">
+                                        <p class="shop-buy__title">Life Is What You<br>Make It</p>
+                                        <p class="shop-buy__price">$70</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="shop-buy__product shop-buy__product_active">
+                                        <img src="img/book10.jpg" alt="book" class="shop-buy__img">
+                                        <p class="shop-buy__title">The Hare With<br>Amber Eyes</p>
+                                        <p class="shop-buy__price">$40</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="shop-buy__product shop-buy__product_active">
+                                        <img src="img/book11.jpg" alt="book" class="shop-buy__img">
+                                        <p class="shop-buy__title">The Immortals<br>of Meluha</p>
+                                        <p class="shop-buy__price">$122</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="shop-buy__product shop-buy__product_active">
+                                        <img src="img/book12.jpg" alt="book" class="shop-buy__img">
+                                        <p class="shop-buy__title">Life Is What You<br>Make It</p>
+                                        <p class="shop-buy__price">$200</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="shop-buy__product shop-buy__product_active">
+                                        <img src="img/book13.jpg" alt="book" class="shop-buy__img">
+                                        <p class="shop-buy__title">Life Is What You<br>Make It</p>
+                                        <p class="shop-buy__price">$50</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="shop-buy__product shop-buy__product_active">
+                                        <img src="img/book14.jpg" alt="book" class="shop-buy__img">
+                                        <p class="shop-buy__title">The Hare With<br>Amber Eyes</p>
+                                        <p class="shop-buy__price">$55</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="shop-buy__product shop-buy__product_active">
+                                        <img src="img/book15.jpg" alt="book" class="shop-buy__img">
+                                        <p class="shop-buy__title">The Immortals<br>of Meluha</p>
+                                        <p class="shop-buy__price">$120</p>
+                                    </div>
+                                </a>
+                                <ul class="shop-buy__pages">
+                                    <li><button href="#" class="shop-buy__page shop-buy__page_active">1</button></li>
+                                    <li><button href="#" class="shop-buy__page shop-buy__page_active">2</button></li>
+                                    <li><button href="#" class="shop-buy__page shop-buy__page_active">3</button></li>
+                                    <li><button href="#" class="shop-buy__page shop-buy__page_active">4</button></li>
+                                    <li><button href="#" class="shop-buy__page shop-buy__page_active">5</button></li>
+                                    <li><button href="#" class="shop-buy__page shop-buy__page_active">6</button></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -366,6 +360,8 @@
             <div class="footer__line"></div>
             <p>Conditions of Use Privacy Notice © 2012-2013, Booksonline, Inc. or its affiliates</p>
     </section>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>
