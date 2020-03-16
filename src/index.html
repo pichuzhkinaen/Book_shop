@@ -109,6 +109,21 @@
                 <div class="col-md-12">
                     <div class="shop">
                         <div class="shop__nav">
+                            <h2 class="shop__header">Categories</h2>
+                            <button class="shop__btn shop__category">12312</button>
+                            <div id="cat_list_btn"></div>
+                            <div id="cat_list_btn2"></div>
+                        </div>
+                        <!-- <div class="shop__nav" id="nav">
+                            <h2 class="shop__header">Categories</h2>
+                            <h3><button class="shop__btn" href="#"><span class="shop__category">all</span></button></h3>
+                            <h4><button class="shop__btn" href="#"><span class="shop__subcategory">Fiction & Literature</span></button></h4>
+                            <ul id="ul" class="shop__categories">
+                                <li><button class="shop__btn" href="#"><span class="shop__item">Children</span></button></li>
+                                <li><button class="shop__btn" href="#"><span class="shop__item">Science Fiction</span></button></li>
+                            </ul>
+                        </div> -->
+                        <!-- <div class="shop__nav">
                             <h2>Categories</h2>
                             <ul class="shop__categories">
                                 <h3><button class="shop__btn shop__h3" href="#"><span>all</span></button></h3>
@@ -140,12 +155,7 @@
                                 <li class="shop__item"><button class="shop__btn" href="#"><span>Science</span></button></li>
                                 <li class="shop__item"><button class="shop__btn" href="#"><span>Sports</span></button></li>
                             </ul>
-                            <div class="shop__hamburger">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
+                        </div> -->
                         <div class="shop-buy">
                             <ul class="shop-buy__menu">
                                 <li><button href="#" class="shop-buy__btn shop-buy__btn_active">Best sellers</button></li>
@@ -350,7 +360,7 @@
         </div>
     </section>
 
-    <section class="footer">
+    <footer class="footer">
             <div class="footer__text">We accept all major Credit Card/Debit Card/Internet Banking</div>
             <div class="footer__img">
                 <img src="img/master.jpg" alt="banking">
@@ -359,7 +369,43 @@
             </div>
             <div class="footer__line"></div>
             <p>Conditions of Use Privacy Notice © 2012-2013, Booksonline, Inc. or its affiliates</p>
-    </section>
+    </footer>
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Для входа введите ваши Логин и Пароль</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="login" placeholder="Логин или e-mail">
+                <input name="password" placeholder="Пароль" type="password">
+
+                <button class="button button_submit">Войти</button>
+            </form>
+        </div>
+
+        <!-- <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Ваш заказ:</div>
+        cursor: pointer;    <div class="modal__descr">Пульсометр Polar FT1</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
+
+                <button class="button button_submit">Купить</button>
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+        </div>
+    </div> -->
+
+    <button href="#up" class="pageup pageup_show" title="Наверх">
+        <img src="icons/chevron.png" alt="up">
+    </button>
 
     <script src="js/script.js"></script>
 

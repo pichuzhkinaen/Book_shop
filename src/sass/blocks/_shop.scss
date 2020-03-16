@@ -8,54 +8,56 @@
             width: 220px;
             min-height: 864px;
             box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-            h2 {
-                color: #6B6969;
-                font-size: 24px;
-                font-weight: 400;
-                line-height: 24px;
-                margin: 0 0 0 24px;
-                padding: 11px 0 14px 0;
-            }
         }
-        &__categories {
-            padding: 0;
-            :last-child {
-                border-bottom: none;
-            }
-            :focus {
-                background: linear-gradient(to top, #7AB361, #92D673);
-                color: #FFFFFF;
-            }
+        &__header {
+            color: #6B6969;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24px;
+            margin: 0 0 0 24px;
+            padding: 11px 0 14px 0;
         }
+        // &__subcategory {
+        //     padding: 0;
+        //     font-size: 18px;
+        //     color: #525252;
+        //     padding: 0 0 6px 0;
+        //     margin: 10px 0 0 0px;
+        //     :last-child {
+        //         border-bottom: none;
+        //     }
+        //     :focus {
+        //         background: linear-gradient(to top, #7AB361, #92D673);
+        //         color: #FFFFFF;
+        //     }
+        // }
         &__btn {
             width: 220px;
             height: 29px;
             border: none;
             outline: none !important;
             background-color: #fff;
-            padding: 0;
             text-align: left;
-            transform: translateX(-24px);
-            span {
-                margin-left: 24px;
-                color: #555454;
+            font-size: 18px;
+            color: #525252;
+            padding: 0 0 6px 24px;
+            margin: 10px 0 0 0;
+            &:last-child {
+                border-bottom: none;
+            }
+            &:focus {
+                background: linear-gradient(to top, #7AB361, #92D673);
+                color: #FFFFFF;
             }
         }
-        &__h3 {
+        &__category {
             font-size: 20px;
             color: #6B6969;
             text-transform: uppercase;
-            margin-left: 24px;
-        }
-        &__h4 {
-            font-size: 18px;
-            color: #525252;
-            padding: 0 0 6px 0;
-            margin: 10px 0 0 24px;
+            color: #555454;
         }
         &__item {
             font-size: 15px;
-            list-style-type: none;
             line-height: 30px;
             width: 139px;
             border-bottom: 1px solid;
