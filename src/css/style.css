@@ -563,8 +563,8 @@
   margin-top: 17px;
 }
 
-.feed-form {
-  margin-top: 36px;
+.form {
+  margin: 36px auto 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -575,7 +575,7 @@
   width: 300px;
 }
 
-.feed-form input {
+.form input {
   height: 50px;
   border-radius: 5px;
   background-color: #fff;
@@ -588,27 +588,38 @@
   line-height: 66;
 }
 
-.feed-form input:nth-child(3) {
-  margin-bottom: 20px;
-}
-
-.feed-form_mt25 {
-  margin-top: 25px;
-}
-
 .overlay {
+  display: none;
   position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.56);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 5;
 }
 
 .modal {
   width: 400px;
   height: 270px;
-  background-color: #fff;
+  background-color: #F2F2F2;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.modal__close {
+  font-size: 38px;
+  line-height: 20px;
+  color: #7AB461;
+  cursor: pointer;
+  margin: 0 0 0 410px;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+#consultation, #order, #thanks {
+  display: none;
 }
 
 .button {
@@ -621,6 +632,11 @@
   border: none;
   padding: 0;
   outline: none !important;
+}
+
+.button_login {
+  margin: 0 auto;
+  border-radius: 4px;
 }
 
 .pageup {
