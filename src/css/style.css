@@ -579,13 +579,20 @@
   height: 50px;
   border-radius: 5px;
   background-color: #fff;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   border: none;
   padding: 0 20px;
   color: #4b4b4b;
   font-size: 14px;
   font-weight: 300;
   line-height: 66;
+}
+
+.form .registration {
+  text-decoration: overline;
+  color: #79B260;
+  font-size: 14px;
+  text-align: left;
 }
 
 .overlay {
@@ -600,7 +607,7 @@
 
 .modal {
   width: 400px;
-  height: 270px;
+  height: 300px;
   background-color: #F2F2F2;
   margin: 0 auto;
   text-align: center;
@@ -618,8 +625,11 @@
           transform: translateY(-3px);
 }
 
-#consultation, #order, #thanks {
-  display: none;
+.more-splash {
+  -webkit-animation-name: splash;
+          animation-name: splash;
+  -webkit-animation-duration: 1.7s;
+          animation-duration: 1.7s;
 }
 
 .button {
@@ -634,8 +644,9 @@
   outline: none !important;
 }
 
-.button_login {
+.button_sign-in {
   margin: 0 auto;
+  margin-bottom: 15px;
   border-radius: 4px;
 }
 
