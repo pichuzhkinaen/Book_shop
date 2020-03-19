@@ -155,153 +155,64 @@ window.addEventListener('DOMContentLoaded', function() {
 
     });
 
+        // Меню над товарами
+
     let ulMenu = document.querySelector('.shop-buy__menu'),
         btnMenu = document.querySelectorAll('.shop-buy__btn'),
-        goods = document.querySelector('.shop-buy__goods');
+        goods = document.querySelectorAll('.shop-buy__goods');
 
-        // for (let i = 0; i < ulMenu.length; i++) {
-        //     // if (i > 0) {
-        //     //     goods[0].style.display = "none";
-        //     //     goods.style.display = "block";
-        //     // }
-        //     // if (i > 0) {
-        //     //     btnMenu[0].classList.remove('active');
-        //     // }  
-        //     btnMenu[i].classList.add('active');
-        //     console.log(btnMenuMenu[0]);
-        // }
-
-        // function hideBtnMenu(a) {
-        //     for (let i = 0; i < ulMenu.length; i++) {
-        //         // btnMenu[i].classList.contains('active');
-        //         // btnMenu[i].classList.add('hide');
-        //         // ulMenu[i].classList.contains('active');
-        //         // if (ulMenu[i] == false) {
-        //         //     btnMenu[i].classList.add('active');
-        //         // }
-        //     }
-        //     if (btnMenu[i].classList.contains('active');)
-        //     console.log(btnMenu);
-        // }
-        // hideBtnMenu();
-
-        // function hideBtnMenu() {
-        //     // btnMenu[0].classList.add('active');
-        //     for (let i = 0; i < btnMenu.length; i++) {
-        //         // if (btnMenu[b].classList.contains('shop-buy__btn_active')) {
-        //         //     btnMenu[b].classList.remove('shop-buy__btn_active');
-        //         // }
-        //         if (btnMenu[i] == btnMenu[0]) {
-        //             btnMenu[i].classList.add('shop-buy__btn_active');
-        //         } else {
-        //             btnMenu[0].classList.remove('shop-buy__btn_active');
-        //             btnMenu[i].classList.add('shop-buy__btn_active');
-        //         }
-        //         i++;
-        //     }
-        //     console.log(btnMenu[1]);
-        // }
-        // hideBtnMenu();
-
-            // btnMenu[0].classList.add('active');
-        for (let i = 0; i < btnMenu.length; i++) {
-            // if (btnMenu[b].classList.contains('shop-buy__btn_active')) {
-            //     btnMenu[b].classList.remove('shop-buy__btn_active');
-            // }
-            if (btnMenu[i] == btnMenu[0]) {
-                btnMenu[i].classList.add('shop-buy__btn_active');
+        for (let a = 0; a < btnMenu.length; a++) {
+            goods[0].style.display = 'flex';
+            goods[a].style.display = 'none';
+            if (btnMenu[a] == btnMenu[0]) {
+                btnMenu[a].classList.add('shop-buy__btn_active');
             } 
-            // else {
-            //     btnMenu[0].classList.remove('shop-buy__btn_active');
-            //     btnMenu[i].classList.add('shop-buy__btn_active');
-            // }
-            // i++;
         }
-        console.log(btnMenu[1]);
-
-        // ulMenu.addEventListener('click', function() {
-        //     for (let i = 1; i < btnMenu.length; i++) {
-        //         btnMenu[0].classList.remove('shop-buy__btn_active');
-        //         btnMenu[i].classList.add('shop-buy__btn_active');
-        //     }
-        // });
-
-        // ulMenu.addEventListener('click', function(event) {
-        //     let target = event.target;
-        //     if (target && target.classList.contains('shop-buy__btn')) {
-        //         for (let i = 0; i < btnMenu.length; i++) {
-        //             if (target == btnMenu[i]) {
-        //                 btnMenu[0].classList.remove('shop-buy__btn_active');
-        //                 btnMenu[i].classList.add('shop-buy__btn_active');
-        //                 // break;
-        //             }
-        //         }
-
-        //     }
-        // });
-        
+       
     ulMenu.addEventListener('click', function(event) {
+        
         let target = event.target;
         if (target && target.classList.contains('shop-buy__btn')) {
+
             for (let i = 0; i < btnMenu.length; i++) {
+
                 for (let j = 0; j < btnMenu.length; j++) {
+
                     if (target == btnMenu[j]) {
                         btnMenu[i].classList.remove('shop-buy__btn_active');
                         btnMenu[j].classList.add('shop-buy__btn_active');
+                        goods[i].style.display = 'none';
+                        goods[j].style.display = 'flex';
                     }
                 }
             }
         }
     });
-    
-        // function showGoods(b) {
-        //     if (goods[b].classList.contains('active')) {
-        //         goods[b].classList.remove('active');
-        //         goods[b].classList.add('show');
-        //     }
-        // }
-        // ulMenu.addEventListener('click', function(event) {
-        //     let target = event.target;
-        //     if (target && target.classList.contains('shop-buy__btn')) {
-        //         for(let i = 0; i < btnMenu.length; i++) {
-        //             if (target == btnMenu[i]) {
-        //                 hideGoods(0);
-        //                 showGoods(i);
-        //                 break;
-        //             }
-        //         }
-        //     }
-    
-        // });
 
-        // function hideTabContent(a) {
-        //     for (let i = a; i < goods.length; i++) {
-        //         goods[i].classList.remove('active');
-        //         // goods[i].classList.add('hide');
-        //     }
-        // }
-        // hideTabContent(1);
-        
+    //goods.style.display = 'none';
+    // for (let i = 0; i < btnMenu; i++) {
 
+    //     if (btnMenu[i] == btnMenu[0]) {
+    //         goods.style.display = 'none';
+    //     } else {
+    //         goods.style.display = 'none';
+    //     }
+    //     console.log(btnMenu[i]);
+    // }
 
+    // goods.addEventListener('click', function(event) {
+    //     let target = event.target;
+    //     if (target && target.classList.contains('shop-buy__btn')) {
+    //         for (let i = 0; i < btnMenu.length; i++) {
+    //             for (let j = 0; j < btnMenu.length; j++) {
+    //                 if (target == btnMenu[j]) {
+    //                     btnMenu[i].classList.remove('shop-buy__btn_active');
+    //                     btnMenu[j].classList.add('shop-buy__btn_active');
+    //                 }
+    //             }
+    //         }
+    //     }
+    // });
 
-        // btnMenu.addEventListener('click', function() {
-        //     goods.style.display = 'block';
-        //     this.classList.add('active');
-        //     document.body.style.overflow = 'hidden';
-        // });
-
-        // btnMenu.classList.add('active');
-
-
-
-        // btnMenu.onclick = function () {
-        //     goods[0].style.display = "none";
-        //     goods.style.display = "block";
-        // };
-
-        // goodsBest.addEventListener('click', function() {
-        //     goodsBest.style.display = "block";
-        // });
 
 });
