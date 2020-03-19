@@ -77,7 +77,7 @@ window.addEventListener('DOMContentLoaded', function() {
     
     // Закрытие modal при клике вне его окна
     overlay.onclick = function (event) {     
-        console.log('overlay.onclick')
+        console.log('overlay.onclick');
         //event.preventDefault();
         if (event.target == overlay) {
             modal.style.display = "none";
@@ -85,7 +85,7 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     };
 
-    // //smooth scroll and pageup
+        //smooth scroll and pageup
 
     (function() {   
         let goTopBtn = document.querySelector('.pageup');
@@ -115,17 +115,11 @@ window.addEventListener('DOMContentLoaded', function() {
 
          // Form
 
-    // let message = {
-    //     loading: 'Загрузка...',
-    //     success: 'Спасибо! Скоро мы с вами свяжемся!',
-    //     failure: 'Что-то пошло не так...'
-    // };
-
     let form = document.querySelector('.form'),
         input = form.getElementsByTagName('input');
         // statusMessage.classList.add('status');
 
-        console.log(form)
+        console.log(form);
 
         
     form.addEventListener('submit', function(event) {
@@ -152,16 +146,6 @@ window.addEventListener('DOMContentLoaded', function() {
 
         request.send(json);
 
-        // request.addEventListener('readystatechange', function() {
-        //     if (request.readyState < 4) {
-        //         statusMessage.innerHTML = message.loading;
-        //     } else if(request.readyState === 4 && request.status == 200) {
-        //         statusMessage.innerHTML = message.success;
-        //     } else {
-        //         statusMessage.innerHTML = message.failure;
-        //     }
-        // });
-
             // Обнуление инпутов после нажатия кнопки "Вход"
         for (let i = 0; i < input.length; i++) {
             input[i].value = '';
@@ -171,28 +155,153 @@ window.addEventListener('DOMContentLoaded', function() {
 
     });
 
-    // let form = document.getElementsByTagName('input');
+    let ulMenu = document.querySelector('.shop-buy__menu'),
+        btnMenu = document.querySelectorAll('.shop-buy__btn'),
+        goods = document.querySelector('.shop-buy__goods');
 
-    // fetch('form.php', {  
-    //     method: 'post',  
-    //     headers: {  
-    //       "Content-type": "application/json; charset=utf-8"  
-    //     },  
-    //     body: JSON.stringify(form)  
-    //   })
-    //   .then(json)  
-    //   .then(function (data) {  
-    //     console.log('Request succeeded with JSON response', data);  
-    //   })  
-    //   .catch(function (error) {  
-    //     console.log('Request failed', error);  
-    //   });
+        // for (let i = 0; i < ulMenu.length; i++) {
+        //     // if (i > 0) {
+        //     //     goods[0].style.display = "none";
+        //     //     goods.style.display = "block";
+        //     // }
+        //     // if (i > 0) {
+        //     //     btnMenu[0].classList.remove('active');
+        //     // }  
+        //     btnMenu[i].classList.add('active');
+        //     console.log(btnMenuMenu[0]);
+        // }
 
-    // let form = document.querySelector('input');
+        // function hideBtnMenu(a) {
+        //     for (let i = 0; i < ulMenu.length; i++) {
+        //         // btnMenu[i].classList.contains('active');
+        //         // btnMenu[i].classList.add('hide');
+        //         // ulMenu[i].classList.contains('active');
+        //         // if (ulMenu[i] == false) {
+        //         //     btnMenu[i].classList.add('active');
+        //         // }
+        //     }
+        //     if (btnMenu[i].classList.contains('active');)
+        //     console.log(btnMenu);
+        // }
+        // hideBtnMenu();
 
-    // form.onchange = function() {
-    //     console.log(form.value);
-    // };
+        // function hideBtnMenu() {
+        //     // btnMenu[0].classList.add('active');
+        //     for (let i = 0; i < btnMenu.length; i++) {
+        //         // if (btnMenu[b].classList.contains('shop-buy__btn_active')) {
+        //         //     btnMenu[b].classList.remove('shop-buy__btn_active');
+        //         // }
+        //         if (btnMenu[i] == btnMenu[0]) {
+        //             btnMenu[i].classList.add('shop-buy__btn_active');
+        //         } else {
+        //             btnMenu[0].classList.remove('shop-buy__btn_active');
+        //             btnMenu[i].classList.add('shop-buy__btn_active');
+        //         }
+        //         i++;
+        //     }
+        //     console.log(btnMenu[1]);
+        // }
+        // hideBtnMenu();
 
+            // btnMenu[0].classList.add('active');
+        for (let i = 0; i < btnMenu.length; i++) {
+            // if (btnMenu[b].classList.contains('shop-buy__btn_active')) {
+            //     btnMenu[b].classList.remove('shop-buy__btn_active');
+            // }
+            if (btnMenu[i] == btnMenu[0]) {
+                btnMenu[i].classList.add('shop-buy__btn_active');
+            } 
+            // else {
+            //     btnMenu[0].classList.remove('shop-buy__btn_active');
+            //     btnMenu[i].classList.add('shop-buy__btn_active');
+            // }
+            // i++;
+        }
+        console.log(btnMenu[1]);
+
+        // ulMenu.addEventListener('click', function() {
+        //     for (let i = 1; i < btnMenu.length; i++) {
+        //         btnMenu[0].classList.remove('shop-buy__btn_active');
+        //         btnMenu[i].classList.add('shop-buy__btn_active');
+        //     }
+        // });
+
+        // ulMenu.addEventListener('click', function(event) {
+        //     let target = event.target;
+        //     if (target && target.classList.contains('shop-buy__btn')) {
+        //         for (let i = 0; i < btnMenu.length; i++) {
+        //             if (target == btnMenu[i]) {
+        //                 btnMenu[0].classList.remove('shop-buy__btn_active');
+        //                 btnMenu[i].classList.add('shop-buy__btn_active');
+        //                 // break;
+        //             }
+        //         }
+
+        //     }
+        // });
+        
+    ulMenu.addEventListener('click', function(event) {
+        let target = event.target;
+        if (target && target.classList.contains('shop-buy__btn')) {
+            for (let i = 0; i < btnMenu.length; i++) {
+                for (let j = 0; j < btnMenu.length; j++) {
+                    if (target == btnMenu[j]) {
+                        btnMenu[i].classList.remove('shop-buy__btn_active');
+                        btnMenu[j].classList.add('shop-buy__btn_active');
+                    }
+                }
+            }
+        }
+    });
+    
+        // function showGoods(b) {
+        //     if (goods[b].classList.contains('active')) {
+        //         goods[b].classList.remove('active');
+        //         goods[b].classList.add('show');
+        //     }
+        // }
+        // ulMenu.addEventListener('click', function(event) {
+        //     let target = event.target;
+        //     if (target && target.classList.contains('shop-buy__btn')) {
+        //         for(let i = 0; i < btnMenu.length; i++) {
+        //             if (target == btnMenu[i]) {
+        //                 hideGoods(0);
+        //                 showGoods(i);
+        //                 break;
+        //             }
+        //         }
+        //     }
+    
+        // });
+
+        // function hideTabContent(a) {
+        //     for (let i = a; i < goods.length; i++) {
+        //         goods[i].classList.remove('active');
+        //         // goods[i].classList.add('hide');
+        //     }
+        // }
+        // hideTabContent(1);
+        
+
+
+
+        // btnMenu.addEventListener('click', function() {
+        //     goods.style.display = 'block';
+        //     this.classList.add('active');
+        //     document.body.style.overflow = 'hidden';
+        // });
+
+        // btnMenu.classList.add('active');
+
+
+
+        // btnMenu.onclick = function () {
+        //     goods[0].style.display = "none";
+        //     goods.style.display = "block";
+        // };
+
+        // goodsBest.addEventListener('click', function() {
+        //     goodsBest.style.display = "block";
+        // });
 
 });

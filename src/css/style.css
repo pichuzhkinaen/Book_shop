@@ -383,13 +383,6 @@
   padding: 0;
 }
 
-.buy .shop-buy__menu :focus {
-  font-size: 18px;
-  color: #464646;
-  background: #fff;
-  border-bottom: none;
-}
-
 .buy .shop-buy__btn {
   width: 140px;
   height: 39px;
@@ -400,6 +393,13 @@
   background: linear-gradient(to top, #E8E8E8, #F9F9F9);
   outline: none !important;
   padding: 0;
+}
+
+.buy .shop-buy__btn_active {
+  font-size: 18px;
+  color: #464646;
+  background: #fff;
+  border-bottom: none;
 }
 
 .buy .shop-buy__goods {
@@ -422,6 +422,10 @@
 
 .buy .shop-buy__goods a {
   text-decoration: none;
+}
+
+.buy .shop-buy__goods_new-arrivals {
+  display: none;
 }
 
 .buy .shop-buy__product {
