@@ -94,7 +94,7 @@
   font-size: 16px;
 }
 
-.header__sum {
+.header__sum .sum {
   font-size: 27px;
 }
 
@@ -457,6 +457,28 @@
 .buy .shop-buy__price {
   font-size: 22px;
   color: #F05356;
+}
+
+.buy .shop-buy__basket {
+  width: 17px;
+  height: 17px;
+  background-color: #fff;
+  border: none;
+  outline: none !important;
+  background: url("/src/icons/basket.png") center/cover no-repeat;
+  background-size: 90%;
+}
+
+.buy .shop-buy__star {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: none;
+  outline: none !important;
+  background: url("/src/icons/star.png") center/cover no-repeat;
+  background-size: 80%;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
 }
 
 .buy .shop-buy__pages {

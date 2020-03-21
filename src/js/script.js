@@ -155,18 +155,16 @@ window.addEventListener('DOMContentLoaded', function() {
 
     });
 
-        // Меню над товарами
+        // Меню над товарами - обработка событий
 
     let ulMenu = document.querySelector('.shop-buy__menu'),
         btnMenu = document.querySelectorAll('.shop-buy__btn'),
         goods = document.querySelectorAll('.shop-buy__goods');
 
-        for (let a = 0; a < btnMenu.length; a++) {
-            goods[0].style.display = 'flex';
+        goods[0].style.display = 'flex';
+        btnMenu[0].classList.add('shop-buy__btn_active');
+        for (let a = 1; a < btnMenu.length; a++) {
             goods[a].style.display = 'none';
-            if (btnMenu[a] == btnMenu[0]) {
-                btnMenu[a].classList.add('shop-buy__btn_active');
-            } 
         }
        
     ulMenu.addEventListener('click', function(event) {
@@ -176,43 +174,94 @@ window.addEventListener('DOMContentLoaded', function() {
 
             for (let i = 0; i < btnMenu.length; i++) {
 
-                for (let j = 0; j < btnMenu.length; j++) {
-
-                    if (target == btnMenu[j]) {
-                        btnMenu[i].classList.remove('shop-buy__btn_active');
-                        btnMenu[j].classList.add('shop-buy__btn_active');
-                        goods[i].style.display = 'none';
-                        goods[j].style.display = 'flex';
-                    }
+                if (target == btnMenu[i]) {
+                    btnMenu[i].classList.add('shop-buy__btn_active');
+                    goods[i].style.display = 'flex';
+                } else {
+                    btnMenu[i].classList.remove('shop-buy__btn_active');
+                    goods[i].style.display = 'none';
                 }
             }
         }
     });
 
-    //goods.style.display = 'none';
-    // for (let i = 0; i < btnMenu; i++) {
 
-    //     if (btnMenu[i] == btnMenu[0]) {
-    //         goods.style.display = 'none';
-    //     } else {
-    //         goods.style.display = 'none';
-    //     }
-    //     console.log(btnMenu[i]);
-    // }
+            // Вставка картинки с корзиной и звездочкой в карточки товаров
 
-    // goods.addEventListener('click', function(event) {
-    //     let target = event.target;
-    //     if (target && target.classList.contains('shop-buy__btn')) {
-    //         for (let i = 0; i < btnMenu.length; i++) {
-    //             for (let j = 0; j < btnMenu.length; j++) {
-    //                 if (target == btnMenu[j]) {
-    //                     btnMenu[i].classList.remove('shop-buy__btn_active');
-    //                     btnMenu[j].classList.add('shop-buy__btn_active');
-    //                 }
-    //             }
-    //         }
-    //     }
+
+    function getBtn() {
+        let fragment = new DocumentFragment(),
+            purchase = document.querySelectorAll('.shop-buy__purchase');
+      
+        for(let i = 0; i < purchase.length; i++) {
+            let purchaseBtnBasket = document.createElement('button'),
+                purchaseBtnStar = document.createElement('button');
+
+            purchaseBtnBasket.className = "shop-buy__basket";
+            purchase[i].append(purchaseBtnBasket);
+
+            purchaseBtnStar.className = "shop-buy__star";
+            purchase[i].append(purchaseBtnStar);
+        }
+      
+        return fragment;
+    }
+    getBtn();
+
+
+        // Calc покупок. При нажатии на корзину у товара меняется сумма вверху
+
+    // let btnBasket = querySelectorALL('.shop-buy__basket'),
+    //     price = querySelectorAll('.shop-buy__price'),
+    //     personsSum = getElementById('sum');
+
+    //     personsSum = 0;
+
+    // btnBasket.addEventListener('click', function() {
     // });
+    
 
+
+        // let persons = document.querySelectorAll('.counter-block-input')[0],
+        // restDays = document.querySelectorAll('.counter-block-input')[1],
+        // place = document.getElementById('select'),
+        // totalValue = document.getElementById('total'),
+        // personsSum = 0,
+        // daysSum = 0,
+        // total = 0;
+
+        // totalValue.innerHTML = 0;
+
+        // persons.addEventListener('change', function() {
+        //     personsSum = +this.value;
+        //     total = (daysSum + personsSum)*4000;
+
+        //     if(restDays.value == '' || persons.value == '') {
+        //         totalValue.innerHTML = 0;
+        //     } else {
+        //         totalValue.innerHTML = total;
+        //     }
+        // });
+
+        // restDays.addEventListener('change', function() {
+        //     daysSum = +this.value;
+        //     total = (daysSum + personsSum)*4000;
+
+        //     if(persons.value == '' || restDays.value == '') {
+        //         totalValue.innerHTML = 0;
+        //     } else {
+        //         totalValue.innerHTML = total;
+        //     }
+        // });
+
+        // place.addEventListener('change', function() {
+        //     if (restDays.value == '' || persons.value == '') {
+        //         totalValue.innerHTML = 0;
+        //     } else {
+        //         let a = total;
+        //         totalValue.innerHTML = a * this.options[this.selectedIndex].value;
+        //     }
+        // });
+        
 
 });

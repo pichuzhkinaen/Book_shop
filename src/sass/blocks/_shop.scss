@@ -150,6 +150,25 @@
                 font-size: 22px;
                 color: #F05356;
             }
+            &__basket {
+                width: 17px;
+                height: 17px;
+                background-color: #fff;
+                border: none;
+                outline: none !important;
+                background: url('/src/icons/basket.png') (center / cover) no-repeat;
+                background-size: 90%;
+            }
+            &__star {
+                width: 20px;
+                height: 20px;
+                background-color: #fff;
+                border: none;
+                outline: none !important;
+                background: url('/src/icons/star.png') (center / cover) no-repeat;
+                background-size: 80%;
+                transform: translateY(2px);
+            }
             &__pages {
                 position: absolute;
                 display: flex;

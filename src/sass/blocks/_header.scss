@@ -46,7 +46,9 @@
         }
     }
     &__sum {
-        font-size: 27px;
+        .sum {
+            font-size: 27px;
+        }
     }
     &__btn {
         font-size: 15px;
