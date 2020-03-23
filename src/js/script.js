@@ -189,35 +189,218 @@ window.addEventListener('DOMContentLoaded', function() {
             // Вставка картинки с корзиной и звездочкой в карточки товаров
 
 
-    function getBtn() {
-        let fragment = new DocumentFragment(),
-            purchase = document.querySelectorAll('.shop-buy__purchase');
-      
+    function getBtnPurchase() {
+        let purchase = document.querySelectorAll('.shop-buy__purchase');
+
         for(let i = 0; i < purchase.length; i++) {
             let purchaseBtnBasket = document.createElement('button'),
                 purchaseBtnStar = document.createElement('button');
-
-            purchaseBtnBasket.className = "shop-buy__basket";
+            
             purchase[i].append(purchaseBtnBasket);
-
-            purchaseBtnStar.className = "shop-buy__star";
+            purchaseBtnBasket.className = "shop-buy__basket";
+            purchaseBtnBasket.addEventListener('click', addGoodBasket);
             purchase[i].append(purchaseBtnStar);
+            purchaseBtnStar.className = "shop-buy__star";
         }
-      
-        return fragment;
     }
-    getBtn();
+    getBtnPurchase();
 
 
         // Calc покупок. При нажатии на корзину у товара меняется сумма вверху
+    
+    let btnBasket = document.querySelectorAll('.shop-buy__basket') [0], // кнопка "добавить в корзину"
+        sum = document.getElementById('sum'), // данные корзины
+        
+        goodCard = document.querySelectorAll('.shop-buy__goods'), // карточки товара - родительские элементы кнопки добавления в корзину
+        sumValue = 0;
+        sum.innerHTML = '$' +  sumValue;
 
-    // let btnBasket = querySelectorALL('.shop-buy__basket'),
-    //     price = querySelectorAll('.shop-buy__price'),
-    //     personsSum = getElementById('sum');
+        // console.log("price:");
+        // // console.log(price);
+        // console.log(price[0]);
+        // console.log(price[0].innerHTML);
 
-    //     personsSum = 0;
+        // let personsSum = {};
+        // personsSum[price] = [price, 1];
+
+        // console.log(personsSum);
+
+    function addGoodBasket(event) {
+        let target = event.target,
+            parentBox = target.parentNode, // родительский элемент кнопки "Добавить в корзину"
+            price = parentBox.querySelector('.shop-buy__price').innerHTML;
+
+            sumValue = Number(sumValue) + Number(price); // перевод в числовое значение
+
+            sum.innerHTML = '$' + sumValue;
+
+        console.log('addGoodBasket');
+        console.log(target);
+        console.log(parentBox);
+        console.log(price);
+        console.log(sumValue);
+    }
+
+    // for(let j = 0; j < btnBasket.length; j++){
+    //     btnBasket[j].addEventListener('click', addGoodBasket);
+    // }
+
+    // btnBasket.addEventListener('click', function(event) {
+    
+    //     let target = event.target;
+    //     if (target && target.classList.contains('shop-buy__basket')) {
+
+    //         for (let i = 0; i < btnBasket.length; i++) {
+
+    //             if (target == btnBasket[i]) {
+    //                 for (let j = 0; j < price.length; j++) {
+    //                     if ([j].price == [i].btnBasket) {
+    //                         sum = sumValue + price[j];
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    //     console.log(sum);
+    // });
+
+
+    // function addGoodBasket(event) {
+
+    //     let //parentBox = this.parentNode, // родительский элемент кнопки "Добавить в корзину" (родитель текущего элемента)
+    //             target = event.target;
+
+    //     for (let i = 0; i < btnBasket.length; i++) {
+    //         if (target == btnBasket[i]) {
+    //             console.log(btnBasket[i]);
+
+    //             for (let a = 0; a < price.length; a++) {
+    //                 if (btnBasket[i] == price[a]) {
+    //                     console.log(price[a]);
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    // for(let j = 0; j < btnBasket.length; j++){
+    //     btnBasket[j].addEventListener('click', addGoodBasket);
+    // // console.log(btnBasket[j]);
+    // }
+
+        // for (let i = 0; i < price.length; i++) {
+        //     let priceData = getPriceData() || {};
+
+        //     priceData[i] = price[i];
+
+        // }
+        // console.log(price[0]);
+    // Добавляем товар в корзину
+
+    // function addGoodBasket(e) {
+    //     let parentBox = this.parentNode, // родительский элемент кнопки "Добавить в корзину"
+    //         price = parentBox.querySelector('.shop-buy__price').innerHTML; // стоимость товара
+
+    //     for (let j = 0; j < price.length; j++) {
+            
+    //     }
+    // };
+    // function addGoodBasket(event) {
+        
+    //     let target = event.target;
+
+    //     if (target && target.classList.contains('shop-buy__basket')) {
+
+    //         for (let i = 0; i < price.length; i++) {
+
+    //             if (target == price[i]) {
+    //                 console.log(price);
+    //             }
+    //         }
+    //     }
+    // }
+
+
+            // let target = event.target,
+        //     parentBox = this.parentNode, // родительский элемент кнопки "Добавить в корзину"
+        //     price = parentBox.querySelector('.shop-buy__price').innerHTML; // стоимость товара
+
+        //     let obj = {};
+        //     price.forEach(function(value, key) {
+        //         obj[key] = value;
+        //     });
+        //     console.log(obj);
+        // if (target && target.classList.contains('.shop-buy__goods')) {
+    
+        //     for (let i = 0; i < price.length; i++) {
+    
+                // if (target == parentBox) {
+                // sum = sumValue + price[i];
+                // }
+        //     }
+        // }
+
+
+
+    // function addToCart(e){
+    //     //this.disabled = true; // блокируем кнопку на время операции с корзиной
+
+    //     let parentBox = this.parentNode, // родительский элемент кнопки "Добавить в корзину"
+    //         price = parentBox.querySelector('.shop-buy__price').innerHTML; // стоимость товара
+
+    //     sum[itemId] = [itemTitle, itemPrice, 1];
+
+    //     if(!setCartData(cartData)){ // Обновляем данные в LocalStorage
+    //     this.disabled = false; // разблокируем кнопку после обновления LS
+    //     }
+    // return false;
+    // }
+    // Устанавливаем обработчик события на каждую кнопку "Добавить в корзину"
+
+
+    // [].forEach.call(btnBasket,function(el){
+    //     el.addEventListener('click', function (e) {
+    //         for (let i = 0; i < price.length; i++) {
+    //             sum.innerHTML = sumValue + price;
+    //             console.log(sum);
+    //         }
+    //     });
+    // });
 
     // btnBasket.addEventListener('click', function() {
+    //     for (let i = 0; i < btnBasket.length; i++) {
+
+    //         for (let j = 0; j < price.length; j ++) {
+    //             if (btnBasket[i] == price[j]) {
+    //                 sum.innerHTML = price[j];
+    //             }
+                
+    //         }
+
+    //     }
+    //     console.log(sum);
+    // });
+
+    // btnBasket.addEventListener('click', function(event) {
+        
+    //     let target = event.target;
+
+    //     for (let i = 0; i < price.length; i++) {
+
+    //         if (target == price[i]) {
+    //             sum.innerHTML = price[i];
+    //         }
+    //     }
+    // });
+
+
+    // btnBasket.addEventListener('click', function() {
+    //     let 
+    //     //btnBasket = querySelectorALL('.shop-buy__basket'),
+    //         price = querySelectorAll('.shop-buy__price'),
+    //         personsSum = getElementById('sum'),
+    //         personsSumValue = 0;
+
+    //         personsSum.innerHTML = personsSumValue;
     // });
     
 

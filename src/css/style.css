@@ -459,6 +459,11 @@
   color: #F05356;
 }
 
+.buy .shop-buy__dollar {
+  font-size: 22px;
+  color: #F05356;
+}
+
 .buy .shop-buy__basket {
   width: 17px;
   height: 17px;
