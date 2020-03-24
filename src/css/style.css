@@ -367,6 +367,7 @@
 .buy .shop-buy {
   position: relative;
   margin-left: 10px;
+  width: 890px;
 }
 
 .buy .shop-buy__menu {
@@ -414,7 +415,7 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 890px;
-  min-height: 975px;
+  min-height: 1104px;
   border: 1px solid #DEE1E2;
   margin-top: 38px;
   padding: 25px 0 0 26px;
@@ -493,6 +494,7 @@
   display: flex;
   bottom: 0;
   right: 29px;
+  z-index: 3;
 }
 
 .buy .shop-buy__pages :focus {
